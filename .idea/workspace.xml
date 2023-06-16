@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd0da4f9-abb4-454c-a01a-b9dc3b9ddb96" name="Changes" comment=":package: :construction:Added database setup: Schema creation and data seeding" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="back-end" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/components/SidebarItems.tsx" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2RCtgp7icy1hdfDpZ3pXtfWTxuK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/void-main/Documents/Web Development/projects/spotify_clone",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/void-main/Documents/Web Development/projects/spotify_clone",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/void-main/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/231.8109.174/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd0da4f9-abb4-454c-a01a-b9dc3b9ddb96" name="Changes" comment="" />
+      <created>1686766019145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686766019145</updated>
+      <workItem from="1686766023268" duration="688000" />
+      <workItem from="1686769614495" duration="2734000" />
+      <workItem from="1686816496180" duration="3576000" />
+      <workItem from="1686849166366" duration="2391000" />
+      <workItem from="1686852769812" duration="4399000" />
+      <workItem from="1686899616241" duration="103000" />
+      <workItem from="1686899738518" duration="18000" />
+      <workItem from="1686899768874" duration="575000" />
+      <workItem from="1686902560691" duration="6866000" />
+      <workItem from="1686935072676" duration="1687000" />
+      <workItem from="1686940152895" duration="1274000" />
+    </task>
+    <task id="LOCAL-00001" summary=":tada: Init: Initialization and setup for the project">
+      <created>1686771743583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686771743583</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":lipstick: Add: SideBar Setup">
+      <created>1686851637906</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686851637906</updated>
+    </task>
+    <task id="LOCAL-00003" summary=":lipstick: Add: Home page Setup">
+      <created>1686857268290</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686857268290</updated>
+    </task>
+    <task id="LOCAL-00004" summary=":fire: Refactor: Removed .env file">
+      <created>1686906233791</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686906233791</updated>
+    </task>
+    <task id="LOCAL-00005" summary=":package: :construction:Added database setup: Schema creation and data seeding">
+      <created>1686910832267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686910832267</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value=":tada: Init: Initialization and setup for the project" />
+    <MESSAGE value=":lipstick: Add: SideBar Setup" />
+    <MESSAGE value=":lipstick: Add: Home page Setup" />
+    <MESSAGE value=":fire: Refactor: Removed .env file" />
+    <MESSAGE value=":package: :construction:Added database setup: Schema creation and data seeding" />
+    <option name="LAST_COMMIT_MESSAGE" value=":package: :construction:Added database setup: Schema creation and data seeding" />
+  </component>
+</project>
