@@ -1,6 +1,7 @@
 'use client'
 
 import React, {useEffect, useState} from 'react';
+import Modal from "@/app/components/Modal";
 
 const ModalProvider = () => {
     const [isMounted, setIsMounted] = useState(false)
@@ -11,9 +12,16 @@ const ModalProvider = () => {
     if (!isMounted) return null
 
     return (
-        <div>
-            Modals!
-        </div>
+        <>
+            <Modal title="test modal"
+                   description='test description'
+                   isOpen
+                   onChange={() => {
+                   }}
+            >
+                Test Children
+            </Modal>
+        </>
     );
 };
 
