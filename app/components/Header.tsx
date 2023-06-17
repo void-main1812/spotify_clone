@@ -1,12 +1,14 @@
-'use client'
+"use client";
 
-import React from 'react';
+import React, {useRef} from "react";
 import {useRouter} from "next/navigation";
 import {twMerge} from "tailwind-merge";
 import {RxCaretLeft, RxCaretRight} from "react-icons/rx";
 import {HiHome} from "react-icons/hi";
 import {BiSearch} from "react-icons/bi";
 import Button from "@/app/components/Button";
+import useAuthModal from "@/hooks/useAuthModal";
+import {useSupabaseClient} from "@supabase/auth-helpers-react";
 
 interface HeaderProps {
     children: React.ReactNode;
@@ -14,11 +16,14 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({children, className}) => {
+    const authModal = useAuthModal();
     const router = useRouter();
+
+    const supabaseClient = useSupabaseClient();
 
     const handleLogout = () => {
         // Handle logout later
-    }
+    };
 
     return (
         <div
@@ -29,22 +34,22 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
             p-6
             `, className)}
         >
-            <div className='
+            <div className="
             w-full
             mb-4
             flex
             items-center
             justify-between
-            '>
-                <div className='
+            ">
+                <div className="
                 hidden
                 md:flex
                 gap-x-2
                 items-center
-                '>
+                ">
                     <button
                         onClick={() => router.back()}
-                        className='
+                        className="
                     rounded-full
                     bg-black
                     flex
@@ -52,13 +57,13 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                     justify-center
                     hover:opacity-75
                     transition
-                    '
+                    "
                     >
-                        <RxCaretLeft className='text-white' size={35}/>
+                        <RxCaretLeft className="text-white" size={35}/>
                     </button>
                     <button
                         onClick={() => router.forward()}
-                        className='
+                        className="
                     rounded-full
                     bg-black
                     flex
@@ -66,14 +71,14 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                     justify-center
                     hover:opacity-75
                     transition
-                    '
+                    "
                     >
-                        <RxCaretRight className='text-white' size={35}/>
+                        <RxCaretRight className="text-white" size={35}/>
                     </button>
                 </div>
-                <div className='flex md:hidden gap-x-2 items-center'>
+                <div className="flex md:hidden gap-x-2 items-center">
                     <button
-                        className='
+                        className="
                         rounded-full
                         p-2
                         bg-white
@@ -82,12 +87,12 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                         justify-center
                         hover:opacity-75
                         transition
-                        '
+                        "
                     >
-                        <HiHome className='text-black' size={20}/>
+                        <HiHome className="text-black" size={20}/>
                     </button>
                     <button
-                        className='
+                        className="
                         rounded-full
                         p-2
                         bg-white
@@ -96,40 +101,38 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                         justify-center
                         hover:opacity-75
                         transition
-                        '
+                        "
                     >
-                        <BiSearch className='text-black' size={20}/>
+                        <BiSearch className="text-black" size={20}/>
                     </button>
                 </div>
-                <div className='
+                <div className="
                 flex
                 justify-between
                 items-center
                 gap-x-4
-                '>
+                ">
                     <>
                         <div>
                             <Button
-                                onClick={() => {
-                                }}
-                                className='
+                                onClick={authModal.onOpen}
+                                className="
                             bg-transparent
                             text-neutral-300
                             font-medium
-                            '
+                            "
                             >
                                 Sign up
                             </Button>
                         </div>
                         <div>
                             <Button
-                                onClick={() => {
-                                }}
-                                className='
+                                onClick={authModal.onOpen}
+                                className="
                             bg-white
                             px-6
                             py-2
-                            '
+                            "
                             >
                                 Log in
                             </Button>
