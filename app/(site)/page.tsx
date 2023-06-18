@@ -1,6 +1,7 @@
-import Image from 'next/image'
 import Header from "@/app/components/Header";
 import ListItems from "@/app/components/ListItems";
+
+export const revalidate = 0;
 
 export default function Home() {
     return (
