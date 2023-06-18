@@ -1,9 +1,14 @@
 import Header from "@/app/components/Header";
 import ListItems from "@/app/components/ListItems";
+import getSongs from "@/actions/getSongs";
+import PageContent from "@/app/(site)/components/PageContent";
 
 export const revalidate = 0;
 
-export default function Home() {
+export default async function Home() {
+
+    const songs = await getSongs();
+
     return (
         <div className='
         bg-neutral-900
@@ -43,12 +48,12 @@ export default function Home() {
                     </div>
                 </div>
             </Header>
-            <div className='mt-2 mb-7 px-6' >
-                <div className='flex justify-between items-center' >
-                    <h1 className='text-white text-2xl font-semibold' >Newest Songs</h1>
+            <div className='mt-2 mb-7 px-6'>
+                <div className='flex justify-between items-center'>
+                    <h1 className='text-white text-2xl font-semibold'>Newest Songs</h1>
                 </div>
                 <div>
-                    List of songs
+                    {/*<PageContent songs={songs} />*/}
                 </div>
             </div>
         </div>
