@@ -4,12 +4,14 @@ import React from 'react';
 import {Song} from "@/types";
 import {AiOutlineExclamation} from "react-icons/ai";
 import SongItem from "@/app/components/SongItem";
+import useOnPlay from "@/hooks/useOnPlay";
 
 interface PageContentProps {
     songs: Song[];
 }
 
 const PageContent: React.FC<PageContentProps> = ({songs}) => {
+    const onPlay = useOnPlay(songs);
     if (songs.length === 0) {
         return (
             <div className='mt-4 text-neutral-600 justify-center items-center flex text-2xl font-bold '>
@@ -35,8 +37,7 @@ const PageContent: React.FC<PageContentProps> = ({songs}) => {
             {songs.map((item) => (
                 <SongItem
                     key={item.id}
-                    onClick={() => {
-                    }}
+                    onClick={(id) => onPlay(id)}
                     data={item}
                 />
             ))}
