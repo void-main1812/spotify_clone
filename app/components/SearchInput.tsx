@@ -34,7 +34,7 @@ const SearchInput = () => {
                 placeholder="Search a Song"
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
-                className='rounded-full w-full'
+                className='rounded-full w-4/5'
             />
             <BiSearch className=' m-2 text-neutral-400' size={26} />
         </div>
