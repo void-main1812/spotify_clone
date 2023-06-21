@@ -138,8 +138,8 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                                 Logout
                             </Button>
                             <Button
-                                onClick={() => router.push('/account')}
-                                className='bg-white'
+                                onClick={() => toast.error("Not implemented yet")}
+                                className='bg-white cursor-not-allowed'
                             >
                                 <FaUserAlt/>
                             </Button>

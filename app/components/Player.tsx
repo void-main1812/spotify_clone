@@ -28,6 +28,8 @@ const Player = () => {
         px-4
         bg-opacity-75
         backdrop-blur-md
+        md:bg-gradient-to-t
+        md:from-gray-950
         ' >
             <PlayerContent song={song} songUrl={songUrl} key={songUrl} />
         </div>
