@@ -2,6 +2,7 @@ import React from 'react';
 import {Song} from "@/types";
 import useLoadImage from "@/hooks/useLoadImage";
 import Image from "next/image";
+import PlayButton from "@/app/components/PlayButton";
 
 interface MediaItemProps {
     data: Song;
